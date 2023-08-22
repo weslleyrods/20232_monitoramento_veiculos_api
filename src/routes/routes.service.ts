@@ -12,23 +12,23 @@ export class RoutesService {
     return this.prismaService.route.create({
       data: {
         name: createRouteDto.name,
-        // source:{
-        //   name: createRouteDto.source_id,
-        //   location:{
-        //     lat: 0,
-        //     lng: 0,
-        //   }
-        // },
-        // destination:{
-        //   name: createRouteDto.destination_id,
-        //   location:{
-        //     lat: 0,
-        //     lng: 0,
-        //   }
-        // },
-        // distance: 0,
-        // duration: 0,
-        // directions: '{}',
+        source:{
+          name: createRouteDto.source_id,
+          location:{
+            lat: 0,
+            lng: 0,
+          }
+        },
+        destination:{
+          name: createRouteDto.destination_id,
+          location:{
+            lat: 0,
+            lng: 0,
+          }
+        },
+        distance: 0,
+        duration: 0,
+        directions: '{}',
       },
     });
   }

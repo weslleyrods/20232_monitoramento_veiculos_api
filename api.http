@@ -22,4 +22,7 @@ Content-Type: application/json
 ### Coisas do mapa
 
 ### Pegar o place id
-GET http://localhost:3000/places?text=rua felipe de moura, sao paulo
+GET http://localhost:3000/places?text=rua felipe de moura, são paulo, 110
+
+### Pegar direções entre dois pontos
+GET http://localhost:3000/directions?originId=EklSLiBEb20gVmlsYXJlcywgMTIwIC0gVmlsYSBkYXMgTWVyY2VzLCBTw6NvIFBhdWxvIC0gU1AsIDA0MTYwLTAwMCwgQnJhc2lsIjASLgoUChIJGwI4Yg5bzpQRys1adPvsJIwQeCoUChIJc9-A83JbzpQRSBkqnChDtHk&destinationId=ChIJWS8RYw5bzpQRk4dJM-LK96Q

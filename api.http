@@ -22,4 +22,4 @@ Content-Type: application/json
 ### Coisas do mapa
 
 ### Pegar o place id
-GET http://localhost:3000/places?text=rua felipe de moura, sao paulo, 47
+GET http://localhost:3000/places?text=rua felipe de moura, sao paulo

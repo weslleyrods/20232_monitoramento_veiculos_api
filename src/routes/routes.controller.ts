@@ -8,18 +8,21 @@ export class RoutesController {
   constructor(private readonly routesService: RoutesService) {}
 
   @Post()
-  create(@Body() createRouteDto: CreateRouteDto) {
-    return this.routesService.create(createRouteDto);
+  async create(@Body() createRouteDto: CreateRouteDto) {
+    //DTO - Data Transfer Object
+    const route = await this.routesService.create(createRouteDto);
+    return route;
   }
 
   @Get()
-  findAll() {
-    return this.routesService.findAll();
+  async findAll() {
+    const routes = await this.routesService.findAll();
+    return routes;
   }
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.routesService.findOne(+id);
+    return this.routesService.findOne(id);
   }
 
   @Patch(':id')

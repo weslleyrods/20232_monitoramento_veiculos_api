@@ -18,7 +18,7 @@ model Route {
   distance    Float
   duration    Float
   directions  Json
-  create_at   DateTime @default(now())
+  created_at  DateTime @default(now())
   updated_at  DateTime @updatedAt
 }
 
